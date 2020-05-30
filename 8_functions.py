@@ -415,7 +415,7 @@ make_sandwich(s3)
 ## 8.13 user profile
 
 # from pg 153, build_profile
-def build_profile(first, last, **user_info):
+def build_profile2(first, last, **user_info):
     """Build dict containing everything we know about a user"""
     profile = {}
     profile['first name'] = first
@@ -426,7 +426,7 @@ def build_profile(first, last, **user_info):
     
     return profile
 
-build_profile('raihan','tarmidi', location = 'new zealand', age = 23)
+build_profile2('raihan','tarmidi', location = 'new zealand', age = 23)
 
 
 ## 8.14 cars
