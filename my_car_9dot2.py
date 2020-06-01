@@ -38,7 +38,7 @@ print(myt2.get_descriptive_name())
 
 
 
-from car_9dot2 import *
+# from car_9dot2 import *
 # unused import battery from wildcard ie we import Battery, but we never use.
 myb3 = Car('vw', 'b3', 2006)
 print(myb3.get_descriptive_name())
@@ -48,4 +48,13 @@ print(myt3.get_descriptive_name())
 
 
 ### importing a module into a module
-## we will comment out ElectricCar() and Battery() from car_9dot2.py and then copy it over to another file, electric_car.py
+## NO NEED TO COMMENT electriccar() and battery() OUT FROM CAR_9DOT2
+
+from car_9dot2 import Car
+from electric_car_9dot2 import ElectricCar # MAKE SURE TO IMPORT CAR IN ELECTRICCAR.PY!!!
+
+mb4 = Car('VW' , 'b4', 2024)
+print(mb4.get_descriptive_name())
+
+myt3 = ElectricCar('t', 'roadster', 2020)
+print(myt3.get_descriptive_name())
