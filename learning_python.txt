@@ -1,0 +1,3 @@
+In Python you can make dictionaries which are key value pairs
+In Python, lists are also arrays!!
+in python you can use libraries that make your life easier!

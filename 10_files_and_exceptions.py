@@ -84,3 +84,23 @@ if bday in pi_million:
 else:
     print('your bday doesnt appear in the first million digits of pi')
 
+## ex 10.1 learning Python
+fn = 'learning_python.txt'
+
+with open(fn) as file_obj:
+    lines = file_obj.readlines()
+
+for l in lines:
+    print(l.strip())
+
+## 10.2 learning C
+msg = 'i like dogs'
+msg.replace('dog', 'cat') # changes dog even though 'dogs' is the word in the sentence!1
+
+for l in lines:
+    print(l.strip().replace('python', 'C'))
+
+for l in lines: # case Sensitive but can be separated by commas!
+    print(l.strip().replace('Python', 'C'))
+
+# for case insensitive replacement, regex is the best way: [https://stackoverflow.com/questions/919056/case-insensitive-replace]
