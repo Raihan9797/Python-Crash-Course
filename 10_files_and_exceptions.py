@@ -104,3 +104,60 @@ for l in lines: # case Sensitive but can be separated by commas!
     print(l.strip().replace('Python', 'C'))
 
 # for case insensitive replacement, regex is the best way: [https://stackoverflow.com/questions/919056/case-insensitive-replace]
+
+
+
+
+
+
+
+
+### WRITING TO A FILE
+
+## writing to an empty file
+file_name4 = 'programming.txt'
+
+'''
+read mode ('r')
+write mode ('w')
+append mode ('a')
+read and write mode ('r+')
+
+Python automatically creates the file if it doesn't exist.
+However, be careful if it does, as Python will erase the file to be written over!
+'''
+
+
+# python can only write strings to a txt file
+with open(file_name4, 'w') as file_obj4:
+    file_obj4.write("I love programming")
+# returns number of characters written
+
+
+with open(file_name4, 'w') as file_obj4:
+    file_obj4.write("I love programming\n")
+    file_obj4.write("I love creating new games\n")
+# /n is considered 1 character
+
+
+## appending to a file
+with open(file_name4, 'a') as file_obj5:
+    file_obj5.write("i also like to data mine.\n")
+    file_obj5.write("I also love making apps that can run in a browser.\n")
+
+
+
+
+## 10.3 and 10.4 Guest Book
+
+fn104 = 'guest_book.txt'
+with open(fn104, 'w') as fo104:
+    while True:
+        print("Press 'q' to quit.")
+        g = input("What's your name?: ")
+        
+        if g == 'q':
+            break
+        else:
+            fo104.write(g + '\n')
+## you can also use 'a' to continue appending
