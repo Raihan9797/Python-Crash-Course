@@ -2,7 +2,7 @@
 
 
 ## this way makes it more accessible from other locations
-with open('D:\d Documents\VSCode workspace\python crash course\pi_digits.txt') as file_object:
+with open('D:\d Documents\VSCode workspace\python crash course\chapter_10\pi_digits.txt') as file_object:
     contents = file_object.read()
     print(contents)
 
@@ -10,7 +10,7 @@ with open('D:\d Documents\VSCode workspace\python crash course\pi_digits.txt') a
 ## this assumes the file is in the same location that you are running the code
 with open('pi_digits.txt') as file_object:
     contents = file_object.read()
-    print(contents)
+    print(contents) # error. because the file is in a different folder than the folder you are working on right now!
 
 ## close() can be used but if there is a bug that affects the open(), the close() might never close!!
 ## better to let Python decide. that's why we use (with)
@@ -18,7 +18,7 @@ with open('pi_digits.txt') as file_object:
 ## the book claims that read() will print the output and an extra blank line. But i don't see it
 ## in any case, you can use rstrip() to remove the whitespace
 
-filename = 'pi_digits.txt'
+filename = 'chapter_10\pi_digits.txt'
 
 with open(filename) as file_object:
     for line in file_object:
@@ -30,7 +30,7 @@ with open(filename) as file_object:
 '''
 when you use (with), the file object returned by open() is ONLY AVAILABLE INSIDE THE (with) BLOCK!!
 '''
-filename = 'pi_digits.txt'
+filename = 'chapter_10\pi_digits.txt'
 
 with open(filename) as file_object:
     lines = file_object.readlines()
@@ -85,7 +85,7 @@ else:
     print('your bday doesnt appear in the first million digits of pi')
 
 ## ex 10.1 learning Python
-fn = 'learning_python.txt'
+fn = 'chapter_10\learning_python.txt'
 
 with open(fn) as file_obj:
     lines = file_obj.readlines()
@@ -115,7 +115,7 @@ for l in lines: # case Sensitive but can be separated by commas!
 ### WRITING TO A FILE
 
 ## writing to an empty file
-file_name4 = 'programming.txt'
+file_name4 = 'chapter_10\programming.txt'
 
 '''
 read mode ('r')
@@ -150,7 +150,7 @@ with open(file_name4, 'a') as file_obj5:
 
 ## 10.3 and 10.4 Guest Book
 
-fn104 = 'guest_book.txt'
+fn104 = 'chapter_10\guest_book.txt'
 with open(fn104, 'w') as fo104:
     while True:
         print("Press 'q' to quit.")
