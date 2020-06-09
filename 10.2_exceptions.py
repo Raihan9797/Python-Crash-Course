@@ -79,6 +79,7 @@ def count_words(filename):
 
 count_words(alice2)
 
+# siddhartha.txt NOT siddartha.txt! error will be shown, but we want that
 sidd = 'D:\d Documents\VSCode workspace\python crash course\chapter_10\siddartha.txt'
 moby = 'D:\d Documents\VSCode workspace\python crash course\chapter_10\moby_dick.txt'
 lilw = 'D:\d Documents\VSCode workspace\python crash course\chapter_10\little_women.txt'
