@@ -1,4 +1,4 @@
-from User import User
+from chapter_9.User import User
 
 class Admin(User):
 

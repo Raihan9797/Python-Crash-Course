@@ -1,4 +1,4 @@
-from car_9dot2 import Car
+from chapter_9.car_9dot2 import Car
 
 
 class ElectricCar(Car):
