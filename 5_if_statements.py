@@ -265,7 +265,7 @@ for n in new_users:
         print('welcome '+ n)
 
 ## styling if statements
-if age < 4: # good example
+# if age < 4: # good example
 
-if age<4: # bad example
+# if age<4: # bad example
 
