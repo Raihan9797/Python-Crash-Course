@@ -21,7 +21,7 @@ saving with json is useful when you want to store users information. When the pr
 '''
 
 import json
-fn = 'username.json'
+fn = 'chapter_10/username.json'
 
 # program 1: saving usernames
 username = input('you name: ')
@@ -67,11 +67,10 @@ let's change the above program
 # VERSION 1: remember me
 def greet_user():
     """ greet the user by name"""
-    file_name = 'username.json'
+    file_name = 'chapter_10/remember.json'
     try:
         with open(file_name) as f_o:
             usern = json.load(f_o) 
-
     except FileNotFoundError:
         newname = input("What's your name: ")
 
@@ -79,7 +78,6 @@ def greet_user():
             json.dump(newname, f_o)
         
         print("We'll rmb you next time " + newname)
-
     else:
         print("welcome back " + usern)
 
@@ -93,7 +91,7 @@ let's refactor so it's doing less tasks
 
 def get_stored_username():
     """get stored username if available"""
-    file_name = 'username.json'
+    file_name = 'chapter_10/remember.json'
     try:
         with open(file_name) as f_o:
             usern = json.load(f_o) 
@@ -111,18 +109,18 @@ get_stored_username()
 def greet_user2():
     """ greet the user by name"""
     username = get_stored_username()
-
     if username:
         print("Welcome back " + username)
     else:
         username = input("What's your name?: ")
-        file_name = 'username.json'
+        file_name = 'chapter_10/remember.json'
+        print("we'll rmb you " + username)
         with open(file_name, 'w') as f_o:
             json.dump(username, f_o)
-        print("we'll rmb you " + username)
 
 greet_user2()
 
+import json
 '''
 better, but the else case is still asking for input when you should just be greeting
 
@@ -132,7 +130,7 @@ get_stored_username() is very good because it has a clear purpose.
 
 def get_new_username():
     username = input("What's your name?: ")
-    file_name = 'username.json'
+    file_name = 'chapter_10/username.json'
     with open(file_name, 'w') as f_o:
         json.dump(username, f_o)
     
@@ -158,14 +156,14 @@ greet_user3()
 ## ex 10.1 and 10.2 fav number remembered
 def set_fav_num():
     fav = input("What's your fav number?:")
-    fn = 'fav_num.json'
+    fn = 'chapter_10/fav_num.json'
 
     with open(fn, 'w') as fo:
         json.dump(fav, fo)
     return fav
 
 def load_fav_num():
-    fn = 'fav_num.json'
+    fn = 'chapter_10/fav_num.json'
 
     try:
         with open(fn) as fo:
