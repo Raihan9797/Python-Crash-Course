@@ -33,14 +33,26 @@ This is just installing Python and talks about the differences between Python 2 
 # Chapter 4 Working with Lists
 * for item in list_of_items:
       # do something in for loop
-*         INDENT PROPERLY
+*    INDENT PROPERLY
 * for value in range(1, 5):
       print(value) # ONLY PRINTS TO 4
 * for v in range(start = 2, end = 11, increment =2):
       print(v) # 2, 4, 6, 8, 10
 * **LIST COMPREHENSION**
-squares = [value ** 2 for value in range(1,11)] # returns 1, 4, 9, 16...
-cubes = [ c ** 3 for c in range(1,11) ]
+- squares = [value ** 2 for value in range(1,11)] # returns 1, 4, 9, 16...
+- cubes = [ c ** 3 for c in range(1,11) ]
+
+* slicing lists
+```
+players[0:3] # print pos 0, 1, 2
+players[:3] # same
+players[2:] # from 2 to end
+players[-2:] # prints from 2ND LAST TO LAST; DOES NOT REVERSE THE LIST
+players[-2] # prints 2nd last player
+```
+
+* copying lists and list equality
+
 
 # Chapter 5 if statements
 
