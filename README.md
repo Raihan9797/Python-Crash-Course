@@ -14,21 +14,30 @@ This is just installing Python and talks about the differences between Python 2 
 
 # Chapter 2 Variables and Simple Data Types
 * function: .lower(), .upper(), .title()
+* "This work's as a string!"
+* .rstrip(), .lstrip(), .strip()
+* 0.2 + 0.1 # 0.30000004 because floats are weird
+* converting into to string is NOT implicit
+  age = 23
+  msg = "happy" + str(age) + "rd Birthday!"
 
-# 3 Introducing Lists
 
-# 4 Working with Lists
 
-# 5 if statements
 
-# 6 dictionaries
+# Chapter 3 Introducing Lists
 
-# 7 user input and while loops
+# Chapter 4 Working with Lists
 
-# 8 functions
+# Chapter 5 if statements
 
-# 9 classes 
+# Chapter 6 dictionaries
 
-# 10 Fils and Exceptions
+# Chapter 7 user input and while loops
 
-# 11 Testing Your Code
+# Chapter 8 functions
+
+# Chapter 9 classes 
+
+# Chapter 10 Fils and Exceptions
+
+# Chapter 11 Testing Your Code
