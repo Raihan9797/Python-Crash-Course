@@ -38,7 +38,7 @@ This is just installing Python and talks about the differences between Python 2 
       print(value) # ONLY PRINTS TO 4
 * for v in range(start = 2, end = 11, increment =2):
       print(v) # 2, 4, 6, 8, 10
-* **LIST COMPREHENSION**
+### **LIST COMPREHENSION**
 - squares = [value ** 2 for value in range(1,11)] # returns 1, 4, 9, 16...
 - cubes = [ c ** 3 for c in range(1,11) ]
 
@@ -58,7 +58,7 @@ y = x[:] # COPIES THE LIST
 x ==y # returns TRUE!
 ```
 
-* tuples: an immutable (but reassignable) list!
+### tuples: an immutable (but reassignable) list!
 ```
 dimensions = (200, 50)
 print(dimensions)
@@ -68,7 +68,7 @@ dimensions[0] = 250 # TypeError: tuple object does not support item assignment
 for d in dimensions:
     print(d)
 ```
-* styling codes
+### styling codes
 - PEP: Python Enhancement Proposal: https://python.org/dev/peps/pep-0008/
 - indentation: tab 4 spaces
 - line lengths: 79 or 99 chars
