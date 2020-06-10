@@ -27,13 +27,13 @@ This is just installing Python and talks about the differences between Python 2 
 * .pop(default = 0) # removes and returns 1st element
 *  remove('item') # depetes FIRST occurrence of the val in the list
 * my_list.sort(reverse = True) # PERMANENTLY changes your list
-* sorted(cars2) # TEMPORARILY SORTS the list
+> sorted(cars2) # TEMPORARILY SORTS the list
 * len(my_list)
 
 # Chapter 4 Working with Lists
 * for item in list_of_items:
       # do something in for loop
-*    INDENT PROPERLY
+> INDENT PROPERLY
 * for value in range(1, 5):
       print(value) # ONLY PRINTS TO 4
 * for v in range(start = 2, end = 11, increment =2):
@@ -42,7 +42,7 @@ This is just installing Python and talks about the differences between Python 2 
 - squares = [value ** 2 for value in range(1,11)] # returns 1, 4, 9, 16...
 - cubes = [ c ** 3 for c in range(1,11) ]
 
-* slicing lists
+### slicing lists
 ```
 players[0:3] # print pos 0, 1, 2
 players[:3] # same
@@ -51,7 +51,7 @@ players[-2:] # prints from 2ND LAST TO LAST; DOES NOT REVERSE THE LIST
 players[-2] # prints 2nd last player
 ```
 
-* copying lists and list equality
+### copying lists and list equality
 ```
 x = [1, 2, 3]
 y = x[:] # COPIES THE LIST
@@ -64,9 +64,6 @@ dimensions = (200, 50)
 print(dimensions)
 
 dimensions[0] = 250 # TypeError: tuple object does not support item assignment
-
-for d in dimensions:
-    print(d)
 ```
 ### styling codes
 - PEP: Python Enhancement Proposal: https://python.org/dev/peps/pep-0008/
