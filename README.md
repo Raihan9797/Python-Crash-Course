@@ -21,10 +21,14 @@ This is just installing Python and talks about the differences between Python 2 
   age = 23
   msg = "happy" + str(age) + "rd Birthday!"
 
-
-
-
 # Chapter 3 Introducing Lists
+* my_list = ['can be of different types', 0.7, 25]
+* .append('item'), insert(7, 'item to be put at list[7]'), del motorcycles[7]
+* .pop(default = 0) # removes and returns 1st element
+*  remove('item') # depetes FIRST occurrence of the val in the list
+* my_list.sort(reverse = True) # PERMANENTLY changes your list
+* sorted(cars2) # TEMPORARILY SORTS the list
+* len(my_list)
 
 # Chapter 4 Working with Lists
 
