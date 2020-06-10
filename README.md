@@ -31,6 +31,16 @@ This is just installing Python and talks about the differences between Python 2 
 * len(my_list)
 
 # Chapter 4 Working with Lists
+* for item in list_of_items:
+      # do something in for loop
+*         INDENT PROPERLY
+* for value in range(1, 5):
+      print(value) # ONLY PRINTS TO 4
+* for v in range(start = 2, end = 11, increment =2):
+      print(v) # 2, 4, 6, 8, 10
+* **LIST COMPREHENSION**
+squares = [value ** 2 for value in range(1,11)] # returns 1, 4, 9, 16...
+cubes = [ c ** 3 for c in range(1,11) ]
 
 # Chapter 5 if statements
 
