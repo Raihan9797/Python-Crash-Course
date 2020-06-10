@@ -52,6 +52,28 @@ players[-2] # prints 2nd last player
 ```
 
 * copying lists and list equality
+```
+x = [1, 2, 3]
+y = x[:] # COPIES THE LIST
+x ==y # returns TRUE!
+```
+
+* tuples: an immutable (but reassignable) list!
+```
+dimensions = (200, 50)
+print(dimensions)
+
+dimensions[0] = 250 # TypeError: tuple object does not support item assignment
+
+for d in dimensions:
+    print(d)
+```
+* styling codes
+- PEP: Python Enhancement Proposal: https://python.org/dev/peps/pep-0008/
+- indentation: tab 4 spaces
+- line lengths: 79 or 99 chars
+- comments: 72 chars
+- blank lines: group parts of your programs
 
 
 # Chapter 5 if statements
